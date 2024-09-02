@@ -1,0 +1,15 @@
+<div class="timeline">
+  @for (item of listItemTimeline(); track $index) {
+    <div class="container">
+      <div class="content grid items-center grid-cols-timeline">
+        <h2 class="font-semibold text-sm">{{ item.title }}</h2>
+        <div class="p-1 border">
+          <div class="circle"
+               [ngClass]="$index % 2 === 0 ? 'bg-main-color' : 'bg-black'"
+               aria-hidden="true"></div>
+        </div>
+        <p>{{ item.description }}</p>
+      </div>
+    </div>
+  }
+</div>
