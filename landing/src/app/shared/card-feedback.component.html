@@ -1,0 +1,24 @@
+<div class="flex gap-x-2 w-96">
+  @for (item of listItemCardsFeedbacks(); track $index) {
+    <section class="grid bg-white p-4 rounded-md mt-4 min-w-[250px] max-w-[300px]">
+      <div class="flex items-center gap-x-2">
+        <img class="w-10 rounded-full" [src]="item.image" [alt]="'usuario ' + item.nomeUsuario">
+        <div >
+          <p class="font-bold text-base">{{ item.nomeUsuario }}</p>
+          <p class="font-light text-sm">{{ item.cargo }}</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-x-2">
+        @for(avaliacao of Array(item.avaliacao); track $index) {
+          <img class="max-w-10 " src="images/Star.svg" alt="icone estrela">
+        }
+        <p class="font-bold pl-2">{{ item.avaliacao }}</p>
+      </div>
+
+      <p class="text-sm">
+        {{ item.descricao }}
+      </p>
+    </section>
+  }
+</div>

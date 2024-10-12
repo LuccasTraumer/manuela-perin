@@ -1,0 +1,32 @@
+<section class="p-2">
+  <h3 class="text-center">Serviços</h3>
+
+  <div class="flex gap-x-6 justify-center items-center py-2">
+    <div (click)="changeMain(true)"
+         class="min-w-44 rounded-lg min-h-32 justify-center flex items-center"
+         [ngClass]="isFirstMain() ? 'bg-main-color text-white font-bold' : 'bg-bege text-black font-bold'">
+      <p>Vistoria de Imóveis</p>
+    </div>
+    <div (click)="changeMain(false)"
+         class="min-w-44 rounded-lg min-h-32 justify-center flex items-center"
+         [ngClass]="isFirstMain() ? 'bg-bege text-black font-bold' : 'bg-main-color text-white font-bold' ">
+      <p>Mentoria IP360</p>
+    </div>
+  </div>
+
+  @if (isFirstMain()) {
+    <div class="py-4 grid grid-rows-4 gap-y-2">
+      <h4 class="font-bold text-center text-brown text-4xl">Vistoria de Imóveis</h4>
+
+      <p>Esta com imovels novo e precisando de uma Vistoria?</p>
+      <p class="">Lorem Impseum</p>
+
+      <app-card-image
+        [imagePath]="'landing/public/images/background-card.png'"
+      ></app-card-image>
+    </div>
+
+  } @else {
+    <div></div>
+  }
+</section>
