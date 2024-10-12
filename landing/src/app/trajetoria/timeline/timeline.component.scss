@@ -13,6 +13,8 @@
 .content {
   text-align: center;
   justify-items: center;
+  position: relative;
+  z-index: 99999;
 }
 
 .border {
@@ -28,3 +30,4 @@
 .grid-cols-timeline {
   grid-template-columns: 1fr .5fr 1fr;
 }
+

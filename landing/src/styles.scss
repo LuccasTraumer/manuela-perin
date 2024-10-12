@@ -5,9 +5,21 @@
 
 $main-color: #A46130;
 $black-color: #171617;
+$grey-color: #333;
+$white-grey: #F3F4F7;
+$second-bege: #E8D6C6;
+$brown-color: #503D33;
 
 .bg-main-color {
     background-color: $main-color;
+}
+
+.bg-bege {
+    background-color: $second-bege;
+}
+
+.bg-secondary-color {
+    background-color: $white-grey;
 }
 
 .bg-black {
@@ -16,6 +28,14 @@ $black-color: #171617;
 
 .text-black {
     color: $black-color;
+}
+
+.text-brown {
+    color: $brown-color;
+}
+
+.text-grey {
+    color: $grey-color;
 }
 
 .text-main {
