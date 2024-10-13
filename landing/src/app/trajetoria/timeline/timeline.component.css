@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg-main-color {
+  background-color: #A46130;
+}
+
+.bg-bege {
+  background-color: #E8D6C6;
+}
+
+.bg-secondary-color {
+  background-color: #F3F4F7;
+}
+
+.bg-black {
+  background-color: #171617;
+}
+
+.text-black {
+  color: #171617;
+}
+
+.text-brown {
+  color: #503D33;
+}
+
+.text-grey {
+  color: #333;
+}
+
+.text-main {
+  color: #A46130;
+}
+
+.border-radius {
+  border-radius: 50px;
+}
+
+.border-black {
+  border-color: #171617;
+}
+
+.font-karla {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.timeline {
+  margin-top: 2rem;
+}
+
+.circle {
+  width: 100%;
+  border-radius: inherit;
+  height: 100%;
+}
+
+.content {
+  text-align: center;
+  justify-items: center;
+  position: relative;
+  z-index: 99999;
+}
+
+.border {
+  border: #171617 1px dashed;
+  border-radius: 50000px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-cols-timeline {
+  grid-template-columns: 1fr 0.5fr 1fr;
+}
+
+/*# sourceMappingURL=timeline.component.css.map */

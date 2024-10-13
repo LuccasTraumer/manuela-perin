@@ -1,3 +1,26 @@
-<div class="" [ngStyle]="{ 'background-image': imagePath }">
-
-</div>
+<p-carousel
+        [value]="listItems()"
+        [numVisible]="3"
+        [numScroll]="1"
+        [circular]="true"
+        [responsiveOptions]="responsiveOptions"
+        autoplayInterval="3000">
+    <ng-template let-product pTemplate="item">
+        <div>
+            <img
+                    [src]="product.image"
+                    [alt]="product.image"
+                    />
+            {{ product.name }}
+        </div>
+        <span class="grid grid-cols-3 grid-rows-1 grid-gap-x-2">
+            @for(tag of product.tags; track $index) {
+                <p class="p-2 border-radius bg-bege min-w-[20px]">{{ tag }}</p>
+            }
+        </span>
+    </ng-template>
+    <ng-template let-product pTemplate="footer">
+        <a (click)="goToLink()">{{ product.name }}</a>
+        <p>{{ product.description }}</p>
+    </ng-template>
+</p-carousel>
